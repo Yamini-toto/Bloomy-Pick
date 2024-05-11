@@ -71,6 +71,8 @@ app.get("/Feedback", function (req, res) {
     res.render("Feedback", { feedback: feedback });
   });
 });
-app.listen(3000, function () {
-  console.log("server is starting at port 3000");
+
+const port = process.env.PORT || 3000;
+app.listen(port, function () {
+  console.log(`server is starting at port ${port}`);
 });
