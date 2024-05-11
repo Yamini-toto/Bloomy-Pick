@@ -1,0 +1,84 @@
+<%- include("partials/header", {title: "contact"}) %>
+<section style="margin-top: 93px">
+  <div>
+    <a
+      class="conLeftDiv-a"
+      href="https://www.google.com/maps/d/viewer?mid=1lSkjI8LJ8WwOGTOuFGkNcul_NWk&hl=en_US&ll=46.17715251954153%2C6.130384719600168&z=16"
+      target="_blank"
+    ></a>
+  </div>
+  <form id="myForm" action="/submit" method="post">
+    <div class="conForm">
+      <div class="conForm-info">
+        <div class="con-help">
+          <div>
+            <div><p id="HELP" class="Pseudo">How can we help you?</p></div>
+            <div class="dropdown">
+              <img
+                src="/images/drop-down-arrow.png"
+                alt="dropdowm-arrow"
+                width="20px"
+                class="img-hidden"
+              />
+            </div>
+          </div>
+          <div class="" id="div-p">
+            <p>Found technical issues.</p>
+            <p>I would like to give some suggestions/feedback.</p>
+            <p>Issues regarding order.</p>
+            <p>Prices are too high.</p>
+            <p>Quality is not that good.</p>
+            <p>Need more varietis of flowers.</p>
+          </div>
+        </div>
+        <div class="con-help top" id="n">
+          <div>
+            <input
+              type="text"
+              autocomplete="on"
+              name="fname"
+              id="name"
+              required
+            />
+            <label for="Name" class="name">Full Name</label>
+          </div>
+        </div>
+        <div class="con-help top" id="e">
+          <div>
+            <input
+              type="email"
+              autocomplete="on"
+              name="email"
+              id="email"
+              required
+            />
+            <label for="email" class="email">Email</label>
+          </div>
+        </div>
+        <div class="con-help top" id="m">
+          <div>
+            <input type="text" autocomplete="on" name="number" id="mob" />
+            <label for="mob" class="mob">Mobile Number (Optional)</label>
+          </div>
+        </div>
+        <div class="con-help top" id="t">
+          <div>
+            <textarea
+              rows="7"
+              spellcheck="false"
+              name="feedback"
+              id="type-text"
+            ></textarea>
+            <label for="type-text" class="type-text">Type Text</label>
+          </div>
+        </div>
+        <div class="div-btn">
+          <button type="submit" class="button">Submit Feedback</button>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="reason" id="reason" value="" />
+  </form>
+</section>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,28 @@
+.container0 {
+  width: 100vw;
+  height: 89vh;
+  margin-top: 11vh;
+  position: absolute;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 47px;
+}
+
+.card {
+  width: calc(25% - 24px);
+  margin: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 24px);
+  }
+}
+
+.list-group > li {
+  background-color: #2d5562d9;
+  color: floralwhite;
+}

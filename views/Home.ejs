@@ -1,0 +1,311 @@
+<%- include("partials/header", {title:"Bloomy Pick"}) %>
+
+<!-- //main section  -->
+<main>
+  <div class="top-container">
+    <!-- //left part of top-container  -->
+    <div class="left-grid">
+      <!-- //carousel of top  -->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner carousel-background-top">
+          <div class="carousel-item active">
+            <img
+              src="./images/pexels-алекке-блажин-11244715.jpg"
+              class="d-block w-100 height-top-flowers"
+              alt="flower-img"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/pexels-артем-смолдарев-7462762.jpg"
+              class="d-block w-100 height-top-flowers"
+              alt="flower-img"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/pexels-алекке-блажин-9296467.jpg"
+              class="d-block w-100 height-top-flowers"
+              alt="flower-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="page-title">
+        <div class="title">
+          <h1>Bloomy</h1>
+          <h2>Pick</h2>
+        </div>
+      </div>
+    </div>
+    <!-- //right part of top container  -->
+    <div class="right-grid"></div>
+  </div>
+
+  <!-- //product section  -->
+
+  <div class="product-container">
+    <h2>OUR BEST ARRANGEMENTS</h2>
+    <div class="product-items">
+      <!-- //carousel in product  -->
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- //copy  -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-kuba-macioszek-7149653.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-marina-m-6007739.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-kulbir-11325233.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- //copy  -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-studio-naae-12610047.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-mohan-nannapaneni-11058848.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-tu-hanwei-11848245.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- /copy  -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-tu-hanwei-11848245.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-natalie-bond-15031884.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+                <div class="col-4 display-col">
+                  <img
+                    src="./images/pexels-laura-paredis-13008775.jpg"
+                    class="d-block height-flowers"
+                    alt="flower-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- //copy ends  -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button
+      id="view-items"
+      type="button"
+      class="btn btn-lg"
+      onclick="window.location.href='/products-page'"
+    >
+      View Items
+    </button>
+  </div>
+
+  <!-- //service section  -->
+  <div class="service-container">
+    <div class="cont-1">
+      <div class="circle-service">
+        <img
+          class="service-logo"
+          src="./images/fast.png"
+          width="34px"
+          alt="fast-delivery"
+        />
+      </div>
+      <h3>Fast Delivery</h3>
+    </div>
+    <div class="cont-1">
+      <div class="circle-service">
+        <img
+          class="service-logo"
+          src="./images/value.png"
+          width="34px"
+          alt="value-for-money"
+        />
+      </div>
+      <h3>Value For Money</h3>
+    </div>
+    <div class="cont-1">
+      <div class="circle-service">
+        <img
+          class="service-logo"
+          src="./images/cash-on-delivery.png"
+          width="34px"
+          alt="cash-on-delivery"
+        />
+      </div>
+      <h3>Cash On Delivery</h3>
+    </div>
+  </div>
+
+  <!-- //About section  -->
+  <div class="About-container">
+    <h2>Wo We Are</h2>
+    <div class="line-in-about"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A modi ipsum,
+      odit nemo ullam alias eum molestiae voluptates ex placeat numquam. Labore
+      obcaecati placeat expedita dolore, ut neque esse itaque officiis
+      doloribus!Lorem<br />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi dolores
+      aspernatur aliquid excepturi natus laborum ipsa, voluptatibus veniam quas,
+      harum illo tempora quae inventore repudiandae maxime nulla sequi
+      consectetur placeat Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Quod molestiae expedita molestias incidunt, laborum tempora
+      laboriosam assumenda pariatur et asperiores facilis tempore ullam
+      cupiditate accusantium necessitatibus ex culpa sit repudiandae?<br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      officiis labore vitae distinctio eaque minima doloribus? Laudantium
+      consequuntur officiis temporibus deleniti sit esse corrupti, aut soluta
+      placeat delectus, consequatur facere<span
+        ><a
+          href="/about"
+          style="
+            color: rgb(238, 174, 95);
+            margin-left: 12px;
+            cursor: pointer;
+            text-decoration: none;
+          "
+          title="read all"
+          >....</a
+        ></span
+      >
+    </p>
+  </div>
+
+  <!-- //bottom container  -->
+
+  <div class="bottom-container">
+    <!-- //left side contact section  -->
+    <div class="contact-section">
+      <div class="line-in-contact"></div>
+      <h3>Contact us</h3>
+      <div class="contact-div">
+        <div class="contact-flex">
+          <img src="./images/pin.png" width="20px" alt="address-img" />
+          <span
+            >House no:64, Geneva, veronica mall road, east side 2nd road.</span
+          >
+        </div>
+        <div class="contact-flex">
+          <img src="./images/mail.png" width="20px" alt="mailing-img" />
+          <span>blommyPick99@gmail.com</span>
+        </div>
+        <div class="contact-flex">
+          <img src="./images/phone-call.png" width="20px" alt="calling-img" />
+          <span>+111-456-8799</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- // right side timing section  -->
+    <div class="timing-section">
+      <div class="line-in-timing"></div>
+      <h3>Timings</h3>
+      <div class="timing-div">
+        <div><span>Monday</span><span>8am - 5pm</span></div>
+        <div><span>Tuesday</span><span>8am - 5pm</span></div>
+        <div><span>Wednesday</span><span>8am - 5pm</span></div>
+        <div><span>Thursday</span><span>8am - 5pm</span></div>
+        <div><span>Friday</span><span>8am - 5pm</span></div>
+        <div><span>Saturday</span><span>8am - 2pm</span></div>
+        <div><span>Sunday</span><span>CLOSED</span></div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- //footer section  -->
+<%- include("partials/footer") %>

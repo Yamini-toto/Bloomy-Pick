@@ -1,0 +1,28 @@
+<%- include("partials/header", {title: "Feedback"}) %>
+
+<div class="container0">
+  <div class="container1">
+    <%feedback.forEach((feedbackItem) => { %>
+    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="card" style="width: 18rem">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Reason: </strong><%= feedbackItem.reason %>
+          </li>
+          <li class="list-group-item">
+            <strong>Name: </strong><%= feedbackItem.name %>
+          </li>
+          <li class="list-group-item">
+            <strong>Email: </strong><%= feedbackItem.email %>
+          </li>
+          <li class="list-group-item">
+            <strong>Feedback: </strong><%= feedbackItem.feedback %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include("partials/footer") %>

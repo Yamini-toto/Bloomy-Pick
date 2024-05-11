@@ -1,0 +1,47 @@
+.pro-div{
+     padding-bottom: 4rem;
+     margin-top: 5rem;
+      position: relative;
+}
+.pro-div1A{
+  position: relative;
+  margin-bottom: 2rem;
+}
+.pro-div1A img{
+    height: 20rem;
+    filter: drop-shadow(4px 0px 1px #eee5c9)
+}
+.pro-div1Ah1{
+    font-size: 3rem;
+    font-family: fantasy;
+    color: #dee2e6;
+    text-shadow: 6px 5px #212529;
+    word-spacing: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.proCard-flex1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.2rem;
+}
+
+.proCard-flex2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.3rem 1rem 1rem;
+}
+.proCard-flex2 img{
+  width: 2rem;
+}
+
+.card-img-height{
+  height: 16rem;
+  max-height: 16rem;
+}
