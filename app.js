@@ -9,8 +9,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(bodyParser.urlencoded({ extended: false }));
-mongoose.connect("mongodb://localhost:27017/FeedbackDB");
-
+mongoose.connect('mongodb://127.0.0.1/FeedbackDB')
 const FeedbackSchema = new mongoose.Schema({
   reason: {
     type: String,
