@@ -1,15 +1,20 @@
+require('dotenv').config();
 const express = require("express");
 const path = require("path");
 const ejs = require("ejs");
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const connectDB = require('./db');
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(bodyParser.urlencoded({ extended: false }));
-mongoose.connect('mongodb://127.0.0.1/FeedbackDB')
+
+connectDB();
+
+// mongoose.connect('mongodb://127.0.0.1/FeedbackDB')
 const FeedbackSchema = new mongoose.Schema({
   reason: {
     type: String,
@@ -30,6 +35,11 @@ const FeedbackSchema = new mongoose.Schema({
     type: String,
     required: [true, "The feedback property is missing."],
   },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    index: { expires: '1d' } // TTL index set to 1 day
+  }
 });
 
 const Feedback = mongoose.model("Feedback", FeedbackSchema);
@@ -70,6 +80,17 @@ app.get("/Feedback", function (req, res) {
     res.render("Feedback", { feedback: feedback });
   });
 });
+
+mongoose.connection.on('open', () => {
+  console.log('MongoDB connected...');
+  // Ensure the TTL index is created
+  Feedback.init().then(() => {
+    console.log('TTL index created');
+  }).catch(err => {
+    console.error('Error creating TTL index:', err);
+  });
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
